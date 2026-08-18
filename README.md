@@ -1,40 +1,11 @@
-# Portfólio — João Pedro Alves Santos
+# Portfólio — versão Vercel corrigida
 
-Portfólio pessoal em **Flutter Web**, sem seção de projetos.
+Esta versão foi preparada para eliminar o erro `bash vercel_build.sh exited with 1`.
 
-## O que este projeto inclui
+Ela é estática e não possui etapa de build. Coloque `index.html`, `style.css`, `script.js` e `vercel.json` diretamente na raiz do repositório.
 
-- Página inicial responsiva
-- Seção "Sobre mim"
-- Habilidades e tecnologias
-- Seção transparente explicando que o portfólio foi desenvolvido juntamente com IA
-- Botão para iniciar conversa no WhatsApp: **+55 17 99165-6885**
-- Animações feitas com recursos nativos do Flutter
-- Configuração pronta para deploy na Vercel
+Na Vercel, use Framework Preset: Other, Root Directory vazio e não configure Build Command nem Output Directory manualmente.
 
-## Rodar localmente
+O botão de WhatsApp abre conversa com +55 17 99165-6885.
 
-```bash
-flutter pub get
-flutter run -d chrome
-```
-
-## Gerar build web
-
-```bash
-flutter build web --release
-```
-
-## Deploy na Vercel
-
-O projeto já inclui `vercel.json` e `vercel_build.sh`.
-
-Ao importar o repositório na Vercel:
-- Framework Preset: Other
-- Root Directory: deixe vazio
-- Build Command: pode deixar a configuração do `vercel.json`
-- Output Directory: `build/web`
-
-## Observação sobre IA
-
-Este portfólio foi desenvolvido juntamente com inteligência artificial, usada como ferramenta de apoio em planejamento, código, design, revisão e aprendizado.
+O site informa claramente que o portfólio foi desenvolvido juntamente com inteligência artificial.
