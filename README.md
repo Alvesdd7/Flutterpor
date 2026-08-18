@@ -1,11 +1,57 @@
-# Portfólio — versão Vercel corrigida
+# Alves Dev — Portfólio sem seção de projetos
 
-Esta versão foi preparada para eliminar o erro `bash vercel_build.sh exited with 1`.
+Versão corrigida do portfólio de João Pedro Alves Santos, mantendo o visual anterior com:
 
-Ela é estática e não possui etapa de build. Coloque `index.html`, `style.css`, `script.js` e `vercel.json` diretamente na raiz do repositório.
+- `<Alves Dev />`
+- terminal animado
+- comandos `flutter run`, `whoami` e `focus`
+- fundo escuro com gradientes azul/roxo
+- cards com efeito glass
+- seção Sobre
+- Trajetória
+- Skills
+- seção transparente explicando o uso de IA
+- contato pelo WhatsApp `+55 17 99165-6885`
+- GitHub e Instagram
+- responsividade para celular
 
-Na Vercel, use Framework Preset: Other, Root Directory vazio e não configure Build Command nem Output Directory manualmente.
+## O que foi removido
 
-O botão de WhatsApp abre conversa com +55 17 99165-6885.
+A seção **Projetos** foi removida completamente, inclusive da navegação.
 
-O site informa claramente que o portfólio foi desenvolvido juntamente com inteligência artificial.
+## WhatsApp
+
+Todos os botões de contato abrem:
+
+`https://wa.me/5517991656885`
+
+com uma mensagem inicial pronta.
+
+## IA
+
+O site deixa claro que este portfólio foi desenvolvido **juntamente com inteligência artificial**, usada como ferramenta de apoio para planejamento, código, design, revisão e aprendizado.
+
+## Vercel — importante
+
+Esta versão é estática e NÃO usa `vercel_build.sh`.
+
+Isso evita o erro:
+
+`Command "bash vercel_build.sh" exited with 1`
+
+Suba os arquivos do ZIP diretamente na raiz do seu repositório:
+
+- `index.html`
+- `style.css`
+- `script.js`
+- `vercel.json`
+- `README.md`
+
+Na Vercel:
+
+- Framework Preset: **Other**
+- Root Directory: **vazio**
+- Build Command: **não sobrescrever / vazio**
+- Output Directory: **não sobrescrever / vazio**
+
+Depois faça um novo deploy.
