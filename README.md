@@ -1,170 +1,40 @@
-# Alves Dev — Portfólio Flutter Web
+# Portfólio — João Pedro Alves Santos
 
-Portfólio pessoal responsivo feito em Flutter, com:
+Portfólio pessoal em **Flutter Web**, sem seção de projetos.
 
-- Hero animada
-- Navbar glass fixa
-- Terminal animado
-- Seção Sobre mim
-- Projetos com hover
-- Timeline de trajetória
-- Tecnologias
-- Contato com links externos
-- Animações ao rolar
-- Layout responsivo para desktop e celular
-- Configuração pronta para GitHub e Vercel
+## O que este projeto inclui
 
-## 1. Requisitos locais
+- Página inicial responsiva
+- Seção "Sobre mim"
+- Habilidades e tecnologias
+- Seção transparente explicando que o portfólio foi desenvolvido juntamente com IA
+- Botão para iniciar conversa no WhatsApp: **+55 17 99165-6885**
+- Animações feitas com recursos nativos do Flutter
+- Configuração pronta para deploy na Vercel
 
-Tenha o Flutter instalado e atualizado.
-
-```bash
-flutter doctor
-```
-
-## 2. Rodar o projeto
-
-Na raiz do projeto:
+## Rodar localmente
 
 ```bash
 flutter pub get
 flutter run -d chrome
 ```
 
-Se estiver no Linux e preferir abrir como app desktop:
-
-```bash
-flutter run -d linux
-```
-
-## 3. Alterar seus links
-
-Abra `lib/main.dart` e procure:
-
-```dart
-class AppLinks
-```
-
-Troque os links que ainda possuem `Alvesdd7` pelo seu usuário real do GitHub.
-
-Também é ali que ficam Instagram, WhatsApp e links de cada projeto.
-
-## 4. Adicionar screenshots aos projetos
-
-Coloque as imagens em:
-
-```text
-assets/images/
-```
-
-Depois descomente no `pubspec.yaml`:
-
-```yaml
-flutter:
-  uses-material-design: true
-  assets:
-    - assets/images/
-```
-
-No `ProjectCard`, informe por exemplo:
-
-```dart
-imageAsset: 'assets/images/jarvis.png',
-```
-
-Se nenhuma imagem for informada, o card usa o preview em gradiente automaticamente.
-
-
-## Projetos destacados no portfólio
-
-- **ServiGo** — produto Flutter/SaaS para prestadores de serviço, com foco em clientes, orçamentos, ordens, cobranças e financeiro.
-- **JARVIS Nexus** — assistente de produtividade, voz e automação. Demo pública: `https://jarvis-beta.vercel.app`.
-- **AlvesOS Mobile** — laboratório experimental de interface mobile/PWA, Service Worker e Web APIs.
-- **TF Móveis Planejados** — case demonstrativo de landing page voltada a negócio real e conversão via WhatsApp.
-
-Os cards foram curados para mostrar variedade e potencial de evolução, em vez de listar apenas exercícios.
-
-## 5. Testar a versão web de produção
+## Gerar build web
 
 ```bash
 flutter build web --release
 ```
 
-O resultado ficará em:
+## Deploy na Vercel
 
-```text
-build/web/
-```
+O projeto já inclui `vercel.json` e `vercel_build.sh`.
 
-Para testar localmente:
+Ao importar o repositório na Vercel:
+- Framework Preset: Other
+- Root Directory: deixe vazio
+- Build Command: pode deixar a configuração do `vercel.json`
+- Output Directory: `build/web`
 
-```bash
-cd build/web
-python3 -m http.server 8000
-```
+## Observação sobre IA
 
-Abra `http://localhost:8000`.
-
-## 6. Subir para o GitHub
-
-Crie um repositório vazio no GitHub e, dentro desta pasta, execute:
-
-```bash
-git init
-git add .
-git commit -m "feat: portfolio flutter"
-git branch -M main
-git remote add origin https://github.com/Alvesdd7/portfolio-flutter.git
-git push -u origin main
-```
-
-## 7. Publicar na Vercel pelo GitHub
-
-Este repositório já inclui:
-
-- `vercel.json`
-- `scripts/vercel_build.sh`
-
-O script baixa o Flutter stable no ambiente de build da Vercel, executa `flutter pub get` e depois `flutter build web --release`.
-
-Na Vercel:
-
-1. Clique em **Add New > Project**.
-2. Importe seu repositório do GitHub.
-3. Mantenha a raiz do projeto como `./`.
-4. O `vercel.json` já define o Build Command e o Output Directory.
-5. Clique em **Deploy**.
-
-> O primeiro build pode demorar mais porque o Flutter SDK precisa ser baixado no ambiente de build.
-
-## 8. Alternativa de deploy estático
-
-Se preferir não instalar Flutter durante o build da Vercel, gere localmente:
-
-```bash
-flutter build web --release
-```
-
-E publique o conteúdo de `build/web` como site estático.
-
-## Estrutura
-
-```text
-alves_dev_portfolio/
-├── assets/
-│   └── images/
-├── lib/
-│   └── main.dart
-├── scripts/
-│   └── vercel_build.sh
-├── web/
-│   ├── icons/
-│   ├── favicon.png
-│   ├── index.html
-│   └── manifest.json
-├── .gitignore
-├── analysis_options.yaml
-├── pubspec.yaml
-├── README.md
-└── vercel.json
-```
+Este portfólio foi desenvolvido juntamente com inteligência artificial, usada como ferramenta de apoio em planejamento, código, design, revisão e aprendizado.
